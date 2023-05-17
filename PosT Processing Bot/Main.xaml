@@ -1,0 +1,231 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1062,2452.66666666667" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:uasb="clr-namespace:UiPath.Activities.System.Binding;assembly=UiPath.System.Activities" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="48">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Activities.System.Binding</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Presentations</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="38">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <ueab:SequenceX sap:VirtualizedContainerService.HintSize="1072,2388" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+    <ueab:SequenceX.Variables>
+      <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Default="[new WorkbookQuickHandle(workbookPath:=&quot;Project_Notebook.xlsx&quot;,visible:=True,autoSave:=False,createNew:=True,readOnly:=False,isWorkspace:=True)]" Name="Notes" />
+      <Variable x:TypeArguments="uasb:BindingsRepository" Default="[new UiPath.Activities.System.Binding.BindingsRepository()]" Name="Saved" />
+    </ueab:SequenceX.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Code to process PosT" sap:VirtualizedContainerService.HintSize="1030,2300.66666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="800fe561-8775-4393-b3fb-fb94b635c27b" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="996,2081.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ClickType="Single" DisplayName="first thing to do is to Click 'My Post&quot; word" sap:VirtualizedContainerService.HintSize="954,159.333333333333" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="800fe561-8775-4393-b3fb-fb94b635c27b">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://post.hp.com/menu.html" DesignTimeRectangle="22, 313, 96, 19" ElementType="Icon" FriendlyName="'IMG'" FullSelectorArgument="&lt;webctrl src='menu.html' tag='FRAME' /&gt;&lt;webctrl name='myPost' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl src='menu.html' tag='FRAME' /&gt;&lt;webctrl name='myPost' tag='IMG' type='' aaname='                  ' /&gt;" Guid="48544587-b574-4f4a-8cb7-6d623506ea6c" ImageBase64="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" InformativeScreenshot="2af1c5b68cd48f4dbdbc710ee0c6ed22.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Proto Order System' /&gt;" SearchSteps="FuzzySelector, Image" />
+              </uix:NClick.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+            <uix:NCheckState DisplayName="'Verify'" sap:VirtualizedContainerService.HintSize="954,493.333333333333" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="800fe561-8775-4393-b3fb-fb94b635c27b" Timeout="5">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="If Target appears" sap:VirtualizedContainerService.HintSize="450,272" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ClickType="Single" DisplayName="Click 'Verify'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="800fe561-8775-4393-b3fb-fb94b635c27b">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable BrowserURL="https://post.hp.com/cgi-bin/pos_mypost.cgi" DesignTimeRectangle="453, 356, 38, 16" ElementType="Button" FriendlyName="'Verify'" FullSelectorArgument="&lt;webctrl src='\cgi-bin\pos.cgi' tag='FRAME' /&gt;&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl src='\cgi-bin\pos.cgi' tag='FRAME' /&gt;&lt;webctrl tag='INPUT' type='submit' aaname='Verify' check:text='Verify' /&gt;" Guid="232d5bf1-51c0-434d-92d2-c2df6362e8d1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACoAAAAUCAYAAAD7s6+GAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEySURBVEhL7ZZLDoMgEEC5IImncUE4Rbe67tID6LpH6IJTeIQpIwyOCFGMC0xq8hKLOLz5mFTAQ67niQ7DAG3bVgU6kVcQxR/zPFcFCeP9X/QOCkQNdI0A2ZtofQQtJHRfvpZh0iCaDgzdC2HRMMb7EhSIWvhBHtPL3doZRpVKOk+Z6K56vMr4DCuE0B73XCusnl17u0Q/mJzfq188eb9/ovgrhaJRJb4dyKV10QGh8m5dqDFa53EwQd/+EM/HYRSLutlywZa2LxK8mgRWlVfcv7sTdfdLkvickoooF/VSeuJVjEeCOCdKgkE4vL9yQZQ+IAkymq1Ni9lIHIriPmXjZdqOXBJ1s8QPQvIf07EoHyOKt+Wa6O24hHJtRyoQ9Z0IY5SmAtFzJEUf8zev9ushogA/w6o02XzFgBIAAAAASUVORK5CYII=" InformativeScreenshot="779675e237a9ef83f78d198dd6cb196f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Proto Order System' /&gt;" SearchSteps="FuzzySelector, Image" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Target didnt appear" sap:VirtualizedContainerService.HintSize="450,105" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable BrowserURL="https://post.hp.com/cgi-bin/pos_mypost.cgi" DesignTimeRectangle="453, 356, 38, 16" ElementType="Button" FriendlyName="'Verify'" FullSelectorArgument="&lt;webctrl src='\cgi-bin\pos.cgi' tag='FRAME' /&gt;&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl src='\cgi-bin\pos.cgi' tag='FRAME' /&gt;&lt;webctrl tag='INPUT' type='submit' aaname='Verify' check:text='Verify' /&gt;" Guid="9a008192-e24e-4cb5-acd3-9409a33969b9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACoAAAAUCAYAAAD7s6+GAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEySURBVEhL7ZZLDoMgEEC5IImncUE4Rbe67tID6LpH6IJTeIQpIwyOCFGMC0xq8hKLOLz5mFTAQ67niQ7DAG3bVgU6kVcQxR/zPFcFCeP9X/QOCkQNdI0A2ZtofQQtJHRfvpZh0iCaDgzdC2HRMMb7EhSIWvhBHtPL3doZRpVKOk+Z6K56vMr4DCuE0B73XCusnl17u0Q/mJzfq188eb9/ovgrhaJRJb4dyKV10QGh8m5dqDFa53EwQd/+EM/HYRSLutlywZa2LxK8mgRWlVfcv7sTdfdLkvickoooF/VSeuJVjEeCOCdKgkE4vL9yQZQ+IAkymq1Ni9lIHIriPmXjZdqOXBJ1s8QPQvIf07EoHyOKt+Wa6O24hHJtRyoQ9Z0IY5SmAtFzJEUf8zev9ushogA/w6o02XzFgBIAAAAASUVORK5CYII=" InformativeScreenshot="cefca13b69679de27305c501cebd7cd7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Proto Order System' /&gt;" SearchSteps="FuzzySelector" />
+              </uix:NCheckState.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NCheckState>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[Notes.Sheet(&quot;Scratchpad&quot;).DataTableOutValue]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='New column 0'&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='text'&gt;&lt;webctrl tag='tr' /&gt;&lt;webctrl tag='td' text='-' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="954,157" sap2010:WorkflowViewState.IdRef="NExtractData_1" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="800fe561-8775-4393-b3fb-fb94b635c27b" Version="V3">
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="154, 239, 795, 233" DesignTimeScaleFactor="0.89999997615814209" FriendlyName="'Please enter'" FullSelectorArgument="&lt;webctrl name='main' tag='FRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tag='TBODY' /&gt;" Guid="a4e7da99-5729-44aa-a8f6-238f3203e89d" InformativeScreenshot="370a999499245755e8169b0c19efef61.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Proto Order System' /&gt;" SearchSteps="Selector" Version="V1" Visibility="Interactive" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+            <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="954,1059" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_1" Range="[Notes.Sheet(&quot;Scratchpad&quot;)]" SaveAfterEachRow="False">
+              <ueab:ExcelForEachRowX.Body>
+                <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
+                  <ActivityAction.Argument1>
+                    <DelegateInArgument x:TypeArguments="ue:CurrentRowQuickHandle" Name="CurrentRow" />
+                  </ActivityAction.Argument1>
+                  <ActivityAction.Argument2>
+                    <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+                  </ActivityAction.Argument2>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="538,878" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Sequence DisplayName="Group" sap:VirtualizedContainerService.HintSize="496,786" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NClick ClickType="Single" DisplayName="Click '265087'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="800fe561-8775-4393-b3fb-fb94b635c27b" Version="V3">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="https://post.hp.com/cgi-bin/pos_mypost.cgi" DesignTimeRectangle="154, 359, 46, 16" DesignTimeScaleFactor="0.89999997615814209" ElementType="Text" FriendlyName="'265087'" FullSelectorArgument="&lt;webctrl name='main' tag='FRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='8' tag='A' aaname='*' idx='1' /&gt;" FuzzySelectorArgument="&lt;webctrl name='main' tag='FRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='A' aaname='*' class='' check:text='265087' /&gt;" Guid="02ebeebf-85ff-4b58-8729-fa0342209f60" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADIAAAAUCAYAAADPym6aAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAImSURBVFhH7Va9TgJBEL7H0GfQR6DH0JDQUdMYTURPG0pCrAyNiYUUNhYkvAEPIBaWJhTa28GR+EOwuHFn9nZvdnYP6TyNxZfc7vzs983M5jZK0xQIwwpEUaRQgbvpKaQWTejRfgS9qxo0su8c0p/B5tR+vSP93Rt+55ujcbFvfe6yeAd7NXhRtlyISVhiWCFHTc/mCbm9eYL4bAmt1mdp0Y6XxDMsJH2A7vkHXF4v4X76Bs+z19IC+SFP5Iu8EVbI7XBOxlBgWYF8kbcjJD5blb4TEsgXeTtCcPbIYTxXF2qWo57ARCQYdZi9k9j9yYDtB+xu7jmMzD7iMYEqi6sOFtbmnMcQj1+Jd1AIkkEHnWQB/boKYmQoKSfHQEICwgkZ0f6jXru+CcQZMe0v1wKUSxeiUIiEcyBWtIiowjohZOMF4MKESFNA3hUOLKaxbSyEd4DIqANle42vZ1/bSbfqZnxyYWL0DIRtMyE003kQr0Ru55Xk0ESNvxcrx4e6rXzUHubcpBuI74UESPpk1o/AhI0TVbyoI14H3CJYiMIiSMjkoEBIQaU5MQ0tpOhScn8vlt8L6oZ7t3zh4aIVdySg2iI73BkH66sOUgfnZMTocOJqTcIMeZk31JECXp4Q80OkSqgkErY7Wbe8fQUZGx4NYxekRF43VhQlQ/CH+GeeKLjY2k7g8Pgd2icrallZgfyQ587ugnh7Qrr/r9+fQXC0fvfr9wG+ALOc3IG3l/4wAAAAAElFTkSuQmCC" InformativeScreenshot="ebfc3e62df5d80fec9d940b1b662916d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Proto Order System' /&gt;" SearchSteps="Selector, Image" Version="V1" Visibility="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target DesignTimeRectangle="154, 332, 46, 14" ElementType="Text" FriendlyName="'ID-Rev'" FullSelectorArgument="&lt;webctrl name='main' tag='FRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='6' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl name='main' tag='FRAME' /&gt;&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='' aaname='ID-Rev' check:innerText='ID-Rev' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADIAAAASCAYAAAAZk42HAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE9SURBVEhL7ZQxDsIwDEV7HEaO0bkHYeEIjJ1ZmCshLsAGWyfUtRIHgI0r1CQyTuw4QClSRSqGJ7WW85Pvnzbrug6QU9JM0Ei7TJq/kV+DGTnAKrtBJrhAdTSN23NQR4pypwQ1MV3LQzu65nNUItfyghvlDVypkYywWrQvChlhB3eDOUOt+ocx2IilXtjDvEsmYuTYQBHW2h1UOeoRq62s43u89pWRfqloI26dSyTske+uf3FATRoE2/crI7JOm3swKV0n3ISVvp+41EDjdEZ+E0ZOhJmi6RqcTgQ6LF5jTIg/k8b43whp8XVP9AWPnqJsUC/oHWykXxqWwIip+QSo5pPyHzT2+XeWpiEcHjMiGxE9Rc7rJAhtRP6hqK7/WhZujG6A1EJUIqnijMxnrZhEKuw3a2kkdJgaEzGyhDs8kMNkmCggpgAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NClick ClickType="Single" DisplayName="Click 'Accept Experiment'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="https://post.hp.com/cgi-bin/pos_review/pos_order_detailquery.cgi?orderid=264711" DesignTimeRectangle="144, 535, 101, 16" ElementType="Button" FriendlyName="'Accept Experiment'" FullSelectorArgument="&lt;webctrl src='\cgi-bin\pos.cgi' tag='FRAME' /&gt;&lt;webctrl aaname='Accept Experiment' tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl src='\cgi-bin\pos.cgi' tag='FRAME' /&gt;&lt;webctrl aaname='Accept Experiment' tag='INPUT' type='submit' check:text='Accept Experiment' /&gt;" Guid="a21cd13b-08d2-4a79-bd04-f38aa7cfcbd1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGkAAAAUCAYAAACOPhMlAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAI2SURBVGhD7VlLjoMwDOWCSD1NFyg3gfVoVj0AXc8RZsEpeoRM/E1MQ6QyUKVSIj21OI797OfQRTvfVvWrifQBS0W63W7+er02VALQQ5aKBBuPx6OhEoAesppIlaKJ9AHYJ9Ld+a7r/fib2TsBy9T7bphX9sWPly7wWOEy+sX4HYXZuxNrnofO99OS3dslEgR0g9sMejQg35ZI7+JwLsq17BAJJsr5WT/jHjaTJ9rd2Y63ju3aaDgrvjKdRNRNo+95D2Mk5zUmolDYL8SwcSE33ciRniFmInzKXWKSv0Ou/fTNNynHk3PAc7FGuo1uCHETO+YxfhavixSaJkXgjTJisGjYJBFSfLg4Lsicw1cUFyqvqyRe6SZRcQnED87Dd/kMNmpG2jDiYV+n1MjYPBlEsVueJqZy3qqRcqb9o7zkf9hNmsMUqNrrBmihDBUrsTFR29xYvBaWNKsk0lZhANvkZ44QF85j/BUnsKO//sZZkTSvChC+r4bTxoSzZJcaI58jRUIS6+TUhNdESoRWHC8SNT/mKomUi/M/kXI1vkGknBBaoF71YEeyQDIlJUR+8FPj6Dnaf7bvFAnOwxngwk1E/jo0kVvRvkukrVpOF4kCSQJFQpKKhelNEiJxstmC2aYTx0QvMYYpJnkmcCM0jiDE+4oCg6+ITE3vI59EePRhu3DfL5L4S0ypcUskyS9+Fi/dpHNRnqYjYJv+OWgifQAqEqlhC1mR2l8VdSH7V0Vb9a4mUvXL+z+I88RrGbwm1wAAAABJRU5ErkJggg==" InformativeScreenshot="0cae58eec279f4283cb3ef97f7b561fe.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Proto Order System' /&gt;" SearchSteps="FuzzySelector, Image" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NClick ClickType="Single" DisplayName="Click 'accept experiment'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="https://post.hp.com/cgi-bin/pos_review/pos_review.cgi" DesignTimeRectangle="434, 749, 99, 16" ElementType="Button" FriendlyName="'accept experiment'" FullSelectorArgument="&lt;webctrl src='\cgi-bin\pos.cgi' tag='FRAME' /&gt;&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl src='\cgi-bin\pos.cgi' tag='FRAME' /&gt;&lt;webctrl tag='INPUT' type='submit' aaname='accept experiment' check:text='accept experiment' /&gt;" Guid="90aec63a-6251-4922-b393-6088ad975248" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGcAAAAUCAYAAACQ9yOWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAISSURBVGhD7VjLjYMwEKVBpFSTA6ITOO8xBZDzlpBDqkgJXubzhoHYrMJC4pVs6Slg5vNm3tiHVKGsbFcRJ+Nl4lwul3A+nws+DNIBy8ShD4/Ho+DDIB2wijiZIXtx7n0dqmaIfnsLrm2oTl24x779GUNoqzp0t9i3fyDO0FSfFedI3LpQ7ykON6sC2jDw/j10J+y5ZDR1sLUG07QsbcW/7YmsfGuvc39+Vw4MLgxxlAfbg5PkqfvveGxnIzEWXBqKNe594eTolPfgRPaTf93f07zUt23GW8B8Xc8SJ/NFcYYwWGFaxPjOVw8S2DUgxKURsJ18OIbZKlEfQwuLnxxtlA6Bv/romRqFXxucp9i/cEHORT3YlyEVjlP9KV7iCwGtpr1PDsGfHiqO3m1yAE6MyQG0wBmmKbJGuSKj4symE5hysQ/EWIpgsde5WD0LcRDHD4TZJHklfHcVR5P7iXxdnBiZLeIsYwMSaxJrTZw0l+3ixHglfPcXR5PzsyTkZJhUIso2nhAKlvt/VhTbakOf9hPiaGw00OenZ96nGOyXir2+v0mcJK93iIOCxkSUtHMnhptI+44EBIS9XDNCVGxBTBtyGknrt1kh7t3gY6uQUzPIBk2WgYjFXuWySZzxOcIreXKQ3zjP8aI4R2HRkF1xZOxjUcTJGJmIUxBDVJzyr3QeiP4rXVZ+q4iT8SriZLtC+AFSwVfh9XdqkwAAAABJRU5ErkJggg==" InformativeScreenshot="4260d31bd44bd5f640c2824a1f9cbeb2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Proto Order System' /&gt;" SearchSteps="FuzzySelector, Image" />
+                        </uix:NClick.Target>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NClick>
+                      <Delay Duration="00:00:04" sap:VirtualizedContainerService.HintSize="434,80" sap2010:WorkflowViewState.IdRef="Delay_2" />
+                    </Sequence>
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelForEachRowX.Body>
+            </ueab:ExcelForEachRowX>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="c565965a3f72753bab1c65fc3a1095f0.png" Selector="&lt;html app='chrome.exe' title='Proto Order System'/&gt;" Url="https://post.hp.com/" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+  </ueab:SequenceX>
+</Activity>
